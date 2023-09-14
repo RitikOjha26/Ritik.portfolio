@@ -1,2 +1,14 @@
-@import 'variable.scss';
+@import 'variable';
 @import 'typography.scss';
+@import 'base';
+@import 'mixin';
+
+@import 'common/social.icons';
+@import 'common/cornerButton';
+
+
+
+
+@import 'stylesheets/hero';
+@import 'stylesheets/header';
+@import 'stylesheets/about';

@@ -1,0 +1,79 @@
+/* Define the font family and styles for the body */
+body {
+  font-family: "Lexend Deca", "Poppins", "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2.1rem;
+  letter-spacing: 0.5px;
+  background: $background-primary; /* Set the background color */
+  color: #fff; /* Set the text color */
+}
+
+/* Style for highlighted text */
+.highlight {
+  color: $font-color-green;
+}
+
+/* Define different headline styles */
+.headline {
+  &-1 {
+    font-weight: 600;
+    font-size: 6.5rem; /* Font size for headline 1 */
+    padding-top: 0.2rem;
+    padding-bottom: 1.7rem;
+  }
+
+  &-2 {
+    font-weight: 600;
+    font-size: 4rem; /* Font size for headline 2 */
+  }
+
+  &-3 {
+    font-weight: 500;
+    font-size: 2.8rem; /* Font size for headline 3 */
+    padding-bottom: 1rem;
+    letter-spacing: 0.15rem;
+  }
+}
+
+/* Define different label styles */
+.label {
+  &-1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2.3rem; /* Font size for label 1 */
+  }
+
+  &-2 {
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    font-size: 1.75rem; /* Font size for label 2 */
+  }
+
+  &-3 {
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-size: 1.6rem; /* Font size for label 3 */
+  }
+}
+
+/* Define paragraph styles */
+.para {
+  font-weight: 300;
+  font-size: $default-font-size; /* Use a variable for font size */
+  line-height: 3.2rem; /* Set line height */
+}
+
+/* Additional paragraph style */
+.para-1 {
+  font-weight: 300;
+  line-height: 3.6rem; /* Line height for para-1 */
+}
+
+/* Style for highlighting a part of text */
+.heading-highlight {
+  color: $font-color-blue;
+  display: inline-block; /* Inline display */
+}

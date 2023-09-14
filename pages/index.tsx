@@ -1,11 +1,15 @@
-import Head from 'next/head'
-import Header from '@/components/Header'
-import SocialIcons from '@/components/socialicons'
-//import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-type Props = {}
-const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import SocialIcons from '@/components/socialicons';
+import { Inter } from 'next/font/google';
+import styles from '@/styles/Home.module.css';
+
+// Define the font subset (Latin characters) for Inter
+const inter = Inter({ subsets: ['latin'] });
+
+type Props = {};
 
 export default function Home({}: Props) {
   return (
@@ -17,22 +21,23 @@ export default function Home({}: Props) {
       {/* Home Section */}
       <section id='home'>
         {/* Top Navbar */}
-        <Header/>
-    
+        <Header />
+        
         {/* Left Navbar */}
-        <SocialIcons/>
+        <SocialIcons />
       </section>
-      
+
       {/* Hero */}
+      <section>
+        <Hero />
+      </section>
 
       {/* About Me */}
-
+      <About/>
+      
       {/* Skills */}
-
       {/* Projects */}
-
       {/* Contact Me */}
     </div>
-  )
+  );
 }
-

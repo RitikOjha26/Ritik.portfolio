@@ -6,7 +6,7 @@ type Props = {}
 
 const Logo = (props: Props) => {
   return (
-    <div className='logo-container pl-10 cursor-pointer '>
+    <div className='logo-container  cursor-pointer '>
       
           
             <Image src={logo} alt='LOGO' />

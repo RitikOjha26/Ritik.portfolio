@@ -1,0 +1,85 @@
+@import 'mixin';
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    overflow: none;
+  }
+
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  html {
+    // cursor:none;
+    scroll-behavior: smooth;
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5% (default browser font size is 16px)
+
+    @include respond(tab-land) {
+      // width < 1200?
+      font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) {
+      // width < 900?
+      font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+      font-size: 75%; //1rem = 12, 12/16
+    }
+  }
+
+  ::selection {
+    background-color: $font-color-green;
+    color:  $background-primary;//$font-color-off-white;//
+  }
+
+  /* Scrollbar */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: $font-color-green $background-secondary;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: $background-secondary;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $font-color-green;
+    // border-radius: $border-rad1;
+    // border: 3px none #ffffff;
+  }
+
+  .container {
+    margin: 0 8rem;
+    padding: 7rem 5rem;
+    // transition: margin $timer2 ease-in-out;
+
+    @include respond(tab-port) {
+      margin: 0 4rem;
+    }
+
+    @include respond(phone) {
+      margin: 0 0.5rem;
+      padding: 7rem 3rem 7rem 4rem;
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  

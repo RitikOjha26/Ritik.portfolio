@@ -1,0 +1,70 @@
+.hero-section {
+    width: 100%;
+    height: calc(90vh - $navbar-height); //100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+  
+  
+  
+    &__text-wrapper {
+      width: 57vw;
+      padding: 6.5rem 0rem 15rem 19rem;
+      // color: $font-light;
+      color: $font-color-grey;
+  
+      .typewriter {
+        padding-left: 0.425rem;
+        font-weight: 500;
+        font-size: 2.6rem;
+        letter-spacing: 2.25px;
+      }
+  
+      .selected-text {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: inherit;
+        padding-left: 0.425rem;
+        font-weight: 600;
+        letter-spacing: 2.25px;
+        width: 100%;
+  
+        &::selection {
+          background-color: $font-color-green;
+          color: $background-primary; 
+        }
+      }
+  
+      // .select {
+      // span {
+      //   background-color: $font-color-green;
+      //   color: $background-primary;
+      // }
+      // }
+  
+  
+      @include respond(tab-port) {
+        padding: 6rem 0rem 7rem 8rem;
+      }
+  
+      @include respond(phone) {
+        padding: 3rem 0rem 0rem 3rem;
+      }
+    }
+  
+    &__animation-wrapper {
+      width: 45vw;
+      position: relative;
+      // position: absolute;
+      // width: 100%;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
