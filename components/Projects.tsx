@@ -45,7 +45,7 @@ const projectInfo = [
         name: "Facial Recognition using LBPH",
         description: [
             'Developed a robust Facial Recognition system using Python and OpenCV, integrating the LBPH algorithm to extract discriminative feature to facial images.',
-            "Collected and curated a diverse dataset consisting of facial images from various sources to ensure comprehensive model training.",
+            "Collected a diverse dataset consisting of facial images from various sources to ensure model training.",
 
         ],
         github: "https://github.com/PranjayPathak/SUDOKUprj",
@@ -78,7 +78,7 @@ const projectInfo = [
 
 function Projects({ }: Props) {
     return (
-        <div className='projects container'>
+        <div  id='projects' className='projects container'>
             <h1 className='about__heading headline-1'>Fun&nbsp;<HeadingHighlight>Projects</HeadingHighlight></h1>
             <ul className="projects-wrapper bg-dblue ">
                 {

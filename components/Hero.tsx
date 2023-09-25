@@ -52,7 +52,7 @@ export default function Hero({}: Props) {
         </h1>
         <h3 className="typewriter label-1">
           {text}
-          <Cursor cursorStyle="_" cursorColor="var(--blue-shade)" />
+          {/* <Cursor cursorStyle="_" cursorColor="var(--blue-shade)" /> */}
         </h3>
         
       </div>

@@ -14,12 +14,12 @@ body {
 /* Style for highlighted text */
 .highlight {
   color: $font-color-green;
-  background-color: #0f0f16;
+  //background-color: #0f0f16;
 }
 
 /* Define different headline styles */
 .headline {
-  background-color: #0f0f16;
+  //background-color: #0f0f16;
   &-1 {
     font-weight: 600;
     font-size: 6.5rem; /* Font size for headline 1 */
@@ -43,7 +43,7 @@ body {
 
 /* Define different label styles */
 .label {
-  background-color: #0f0f16;
+  //background-color: #0f0f16;
   &-1 {
     font-weight: 400;
     letter-spacing: 2px;
@@ -65,7 +65,7 @@ body {
 
 /* Define paragraph styles */
 .para {
-  background-color: #0f0f16;
+ // background-color: #0f0f16;
   font-weight: 300;
   font-size: $default-font-size; /* Use a variable for font size */
   line-height: 3.2rem; /* Set line height */
@@ -73,14 +73,14 @@ body {
 
 /* Additional paragraph style */
 .para-1 {
-  background-color: #0f0f16;
+  //background-color: #0f0f16;
   font-weight: 300;
   line-height: 3.6rem; /* Line height for para-1 */
 }
 
 /* Style for highlighting a part of text */
 .heading-highlight {
-  background-color: #0f0f16;
+  //background-color: #0f0f16;
   color: $font-color-blue;
   display: inline-block; /* Inline display */
 }

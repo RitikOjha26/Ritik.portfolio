@@ -4,7 +4,9 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
 import LeftMenu from '@/components/LeftMenu';
+import Footer from '@/components/Footer';
 
 import SocialIcons from '@/components/socialicons';
 import { Inter } from 'next/font/google';
@@ -19,33 +21,36 @@ export default function Home({}: Props) {
   return (
     <div>
       <Head>
+
         <title>Ritik Portfolio</title>
+
       </Head>
       
-      {/* Home Section */}
-      <section id='home'>
-        {/* Top Navbar */}
+      <section id='home'>               {/* Home Section */}
+                                        
+        <Header />                      {/* Top Navbar   */}
         
-        <Header />
-        <LeftMenu />
+        <LeftMenu />                    {/* Left Navbar  */}
         
-        {/* Left Navbar */}
-        <SocialIcons />
+        <SocialIcons />                 {/* BLeft Navbar */}
+
       </section>
 
-      {/* Hero */}
       <section>
-        <Hero />
+
+        <Hero />                        {/* Hero Section */}
+
       </section>
 
-      {/* About Me */}
-      <About/>
+      <About />                          {/* About Me */}
       
-      {/* Skills */}
-      <Skills />
-      {/* Projects */}
-      <Projects/>
-      {/* Contact Me */}
+      <Skills />                        {/* Skills   */}
+      
+      <Projects />                       {/* Projects */}
+      
+      <Contact />                        {/* Contact Me */}
+
+      <Footer />
     </div>
   );
 }

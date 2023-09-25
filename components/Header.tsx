@@ -11,9 +11,11 @@ export default function Header({ }: Props) {
       <Logo />
 
       <div className='top-navbar__items'>
+
         {/* Contact Me Link */}
+        
         <a href="#contact">
-          <div className='top-navbar__items__item contact pt-5 label-1'>
+          <div className='top-navbar__items__item contact_me pt-5 label-1'>
             <div>
               CONTACT ME
             </div>

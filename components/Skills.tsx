@@ -49,7 +49,7 @@ const skills: any = [
 
 function Skills({ }: Props) {
     return (
-        <div className='skills container '>
+        <div id='skills' className='skills container '>
              <h1 className="about__heading headline-1 ">
                 My&nbsp;<HeadingHighlight>Skills</HeadingHighlight>
              </h1>

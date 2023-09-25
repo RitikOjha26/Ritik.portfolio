@@ -4,7 +4,7 @@ type Props = {}
 
 export default function About({ }: Props) {
   return (
-    <div className='about'>
+    <div id='about' className='about'>
 
       <div className="about__wrapper container">
         <h1 className="about__heading headline-1 ">
