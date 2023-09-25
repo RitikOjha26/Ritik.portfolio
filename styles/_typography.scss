@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 2.1rem;
   letter-spacing: 0.5px;
+  width: calc(100vw - 10rem);
   background: $background-primary; /* Set the background color */
   color: #fff; /* Set the text color */
 }
