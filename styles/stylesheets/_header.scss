@@ -8,6 +8,7 @@
     //padding: 1.5rem 2rem;
     padding-right: 0;
     height: $navbar-height;
+    max-width: 100vw;
 
     &__items {
         display: flex;
@@ -25,6 +26,7 @@
          
             border: 3px solid #66B933;
             padding: 0.5rem 1rem;
+            
             border-radius: 5px;
             color: #66B933;
             display: inline-block;

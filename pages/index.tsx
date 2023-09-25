@@ -19,7 +19,7 @@ type Props = {};
 
 export default function Home({}: Props) {
   return (
-    <div>
+    <div className='w-full'>
       <Head>
 
         <title>Ritik Portfolio</title>
