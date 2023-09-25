@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { IconContext } from "react-icons";
 import { BiLinkExternal } from "react-icons/bi";
 import { VscGithubAlt, VscGithub } from "react-icons/vsc";
