@@ -2,6 +2,10 @@ import Head from 'next/head';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
+import LeftMenu from '@/components/LeftMenu';
+
 import SocialIcons from '@/components/socialicons';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
@@ -21,7 +25,9 @@ export default function Home({}: Props) {
       {/* Home Section */}
       <section id='home'>
         {/* Top Navbar */}
+        
         <Header />
+        <LeftMenu />
         
         {/* Left Navbar */}
         <SocialIcons />
@@ -36,7 +42,9 @@ export default function Home({}: Props) {
       <About/>
       
       {/* Skills */}
+      <Skills />
       {/* Projects */}
+      <Projects/>
       {/* Contact Me */}
     </div>
   );

@@ -2,8 +2,10 @@
 .about {
 
     position: relative;
-    min-height: 100vh;
-    //min-width: 100%;
+    overflow: hidden;
+    height: 80vh;
+    width: 100vw;
+    max-width: 100%;
     //margin-left: 23rem;
     //   padding: 12rem;
     //   background-color: $background-secondary;
@@ -19,11 +21,13 @@
   
     }
   
-    // &__heading {
-    //   color: $font-color-off-white;
-    // }
+    &__heading {
+        display: flex;
+        justify-content: center;
+    }
   
-    &__content {
+    &__content { 
+      
       display: flex;
       position: relative;
      // margin-left: 23rem;
@@ -83,5 +87,21 @@
         color: lighten($color: $font-color-grey, $amount: 30);
       }
     }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0%;
+    //   left: 0%;
+    //   width: 100vw;
+    //   height: 100vh;
+    //   background-color: rgba(0, 0, 0, 0.9); /* Adjust the opacity as needed */
+    //   z-index: -1; 
+    // }
     
+  }
+  .box {
+    background-color: rgba(24, 24, 37, 0.9); /* Background color with 90% opacity */
+    //width: 100%; /* Take up the full width of the parent */
+    //height: 100%; /* Take up the full height of the parent */
+  
   }

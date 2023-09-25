@@ -74,7 +74,7 @@ function Particle() {
             distance: isMobile ? 100 : 200, // Adjust the distance for mobile
           },
           move: {
-            enable: isMobile, // Enable particle movement on mobile
+            enable: true, // Enable particle movement on mobile
             speed: isMobile ? 2 : 0.2, // Adjust the speed for mobile
           },
           number: {
