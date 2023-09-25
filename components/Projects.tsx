@@ -65,7 +65,7 @@ const projectInfo = [
             "The webpage is developed using mobile-first styling to optimise the pagerender time and smooth flow/animations.",
 
         ],
-        
+        github: "https://github.com/PranjayPathak/SUDOKUprj",
         url: "https://www.teamcomputers.com/jamf#",
         image: [
             "proj1-c.png",
