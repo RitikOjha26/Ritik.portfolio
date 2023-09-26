@@ -22,31 +22,41 @@
             // margin-right: 1.5rem;
         }
 
-        .contact_me {
-         
-            border: 3px solid #66B933;
-            padding: 0.5rem 1rem;
-            
-            border-radius: 5px;
-            color: #66B933;
-            display: inline-block;
-            transition: padding $timer1 ease;
-
-            &:hover {
-                padding-right: 1.2rem;
-            }
-            &:active {
-                transition-duration: 0;
-                // transform: scaleX(1.02);
-                padding-right: 1.65rem;
-            }
-        }
+        
     }
 }
-.logo-container{
+.logo-container {
     position: relative;
-    //padding-left: 20px;
-    height: 6rem; 
-    width: 12rem;
+    height: 3.5rem;
+    width: 25rem;
     cursor: pointer;
+  
+    
+  }
+  .contact_me {
+    position: relative;
+    left: 36.60%;
+    border: 3px solid #66B933;
+    padding: 0.5rem 2rem;
+    
+    border-radius: 5px;
+    color: #66B933;
+    display: inline-block;
+    transition: padding $timer1 ease;
+
+    &:hover {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
+    &:active {
+        transition-duration: 0;
+        // transform: scaleX(1.02);
+        padding-right: 1.65rem;
+    }
+   
+      @include respond(phone) {
+        position: relative;
+    left: 0%;
+      }
+     
+}

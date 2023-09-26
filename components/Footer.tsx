@@ -15,7 +15,7 @@ function Footer({ }: Props) {
             <div className='footer__wrapper'>
                 <div className='footer__content'>
                     <div className='footer__content__logo-container'>
-                        <Logo />
+                        
                     </div>
                     <div>
                         <h3 className='label-1 thanks-message'>✨ Thanks for visiting!</h3>

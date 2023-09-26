@@ -17,9 +17,9 @@ const projectInfo = [
         github: "https://github.com/RitikOjha26/Code_espresso",
         url: "https://github.com/RitikOjha26/Code_espresso",
         image: [
-            "proj3-a.png",
-            "proj3-b.png",
-            "proj3-c.png",
+            "proj1-a.png",
+            "proj1-b.png",
+            "proj1-c.png",
         ],
         technologies: ['React.js', 'Socket.io', 'Node.js', 'SCSS']
     }, {
@@ -48,12 +48,12 @@ const projectInfo = [
             "Collected a diverse dataset consisting of facial images from various sources to ensure model training.",
 
         ],
-        github: "https://github.com/PranjayPathak/SUDOKUprj",
-        url: "https://sudoku-prj.up.railway.app/",
+        github: "https://github.com/RitikOjha26/FacialRecognition-LBPH",
+        url: "https://github.com/RitikOjha26/FacialRecognition-LBPH",
         image: [
-            "proj1-c.png",
-            "proj1-a.png",
-            "proj1-b.png",
+            "proj3-c.png",
+            "proj3-a.png",
+            "proj3-b.png",
         ],
         technologies: ['Python', 'OpneCV']
     },
@@ -62,15 +62,15 @@ const projectInfo = [
         name: "Jamf TeamComputers Landing Page ",
         description: [
             'Helped my developer friend in building a website for team computers landing page.',
-            "The webpage is developed using mobile-first styling to optimise the pagerender time and smooth flow/animations.",
+            "The webpage is developed using mobile-first styling to optimise the page render time and smooth flow/animations.",
 
         ],
-        github: "https://github.com/PranjayPathak/SUDOKUprj",
+        github: "https://www.teamcomputers.com/jamf#",
         url: "https://www.teamcomputers.com/jamf#",
         image: [
-            "proj1-c.png",
-            "proj1-a.png",
-            "proj1-b.png",
+            "proj4-c.png",
+            "proj4-a.png",
+            "proj4-b.png",
         ],
         technologies: ['React', ' JavaScript','SCSS']
     },

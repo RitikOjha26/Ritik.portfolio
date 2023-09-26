@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Header({ }: Props) {
   return (
-    <header className=' top-navbar flex items-start justify-between mx-auto'>
+    <header className=' top-navbar justify-between'>
 
       <Logo />
 
