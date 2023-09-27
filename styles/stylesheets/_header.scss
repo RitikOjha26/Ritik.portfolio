@@ -30,7 +30,11 @@
     height: 3.5rem;
     width: 25rem;
     cursor: pointer;
-  
+    
+    @include respond(phone) {
+        height: 3.5rem;
+        width: 15rem;
+      }
     
   }
   .contact_me {
