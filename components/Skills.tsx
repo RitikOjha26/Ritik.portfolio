@@ -57,10 +57,11 @@ function Skills({ }: Props) {
             <div className='skills__wrapper '>
                 <div className='text-container para para-1 bg-dblue '>
                     <p>
-                    The following skills are part of my toolbox. 
-                    One of the things I like is to explore and learn new technologies, 
-                    but given the pace at which we are getting new technologies and frameworks, 
-                    these are some of them that I have mastered and worked with recently.
+                    I have a variety of skills in my toolbox. 
+                    While I enjoy exploring and learning new technologies, 
+                    the rapid pace at which new frameworks and technologies are being developed can make it challenging to keep up.
+                    Nevertheless, I am proficient in the following technologies,
+                     which I have recently worked with:
                     </p>
                 </div>
                 <div className='skills-container'>{

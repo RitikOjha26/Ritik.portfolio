@@ -13,24 +13,21 @@ export default function About({ }: Props) {
         <div className="about__content">
           <div>
             <p className="about__content__text para para-1 bg-[#0f0f16]">
-              Hello 👋, My name is <strong>Ritik Ojha</strong> , a recent graduate (B.Tech - 2023). My journey in web development 
-              began during my internship at Kiasa, where I delved into the world of web development and programming.
-              My goal 🎯 with every project is to provide the best functionality and user experience with a maintainable 
-              codebase in the given set of constraints.
-              In addition to my love for web development, I have a strong interest in DSA.
-                <br />
-              I&#39;m now actively seeking opportunities in development and software engineering roles, 
-              eager to apply my skills and contribute to creating outstanding digital experiences. 🚀👨‍💻🌟
-             
+              Hi there! 👋 I&#39;m Ritik Ojha, a recent graduate with a B.Tech degree in 2023. My journey in web development began during my internship at Kiasa, where I explored the world of web development and programming. 
+              My primary goal 🎯 with every project is to deliver the best functionality and user experience while maintaining a clean and concise codebase within the given set of constraints. 
+              Apart from my passion for web development, I also have a strong interest in DSA. 
+              <br />
+              Currently, I&#39;m actively looking for opportunities in development and software engineering roles to apply my skills and contribute to creating exceptional digital experiences.  🚀👨‍💻🌟
+
             </p>
 
           </div>
-          
-          </div>
+
         </div>
       </div>
+    </div>
 
-    
+
 
 
   )

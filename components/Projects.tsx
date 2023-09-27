@@ -26,7 +26,7 @@ const projectInfo = [
         id: 3,
         name: "Ritik Portfolio",
         description: [
-            'The portfolio page you are currently on is developed with a theme in mind but designed on the way as it progressed.',
+            'The portfolio page was developed with a theme in mind and designed as it progressed.',
             'Please feel free to connect over any suggestion, bug report or any doubt regarding the project'
 
         ],
@@ -44,7 +44,7 @@ const projectInfo = [
         id: 2,
         name: "Facial Recognition using LBPH",
         description: [
-            'Developed a robust Facial Recognition system using Python and OpenCV, integrating the LBPH algorithm to extract discriminative feature to facial images.',
+            'My team and I developed a robust Facial Recognition system using Python and OpenCV. We integrated the LBPH algorithm to extract discriminative features from facial images.',
             "Collected a diverse dataset consisting of facial images from various sources to ensure model training.",
 
         ],
@@ -61,7 +61,7 @@ const projectInfo = [
         id: 1,
         name: "Jamf TeamComputers Landing Page ",
         description: [
-            'Helped my developer friend in building a website for team computers landing page.',
+            'I assisted my developer friend in creating a landing page for Team Computers website.',
             "The webpage is developed using mobile-first styling to optimise the page render time and smooth flow/animations.",
 
         ],
