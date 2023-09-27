@@ -61,7 +61,7 @@ function Particle() {
               quantity: isMobile ? 20 : 4, // Adjust the quantity for mobile
             },
             grab: {
-              distance: isMobile ? false : 100, // Adjust the distance for mobile
+              distance: isMobile ? false : 80, // Adjust the distance for mobile
             },
           },
         },
