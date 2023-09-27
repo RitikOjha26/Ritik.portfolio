@@ -14,14 +14,10 @@ export default function Hero({ }: Props) {
   const [text, count] = useTypewriter({
     words: [
       "<AwebDeveloper/>",
-      "Lord of Debuggers",
-      "Breaker of Bugs",
-      "Code Knight of the North",
-      "King of Syntax",
-      "Ruler of the Code Realm",
-      "Protector of Pixels",
-      "Guardian of Git",
-      "Master of JavaScript",
+      "Who-loves-coffee.js",
+      "<AndLovesToCodeMore />",
+      
+      
     ],
     loop: true,
     delaySpeed: 2000,
