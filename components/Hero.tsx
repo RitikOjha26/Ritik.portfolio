@@ -15,7 +15,7 @@ export default function Hero({ }: Props) {
     words: [
       "<AwebDeveloper/>",
       "Who-loves-coffee.js",
-      "<And_Loves_To_Code/>",
+      "<And-Loves-To-Code-More/>",
       
       
     ],
