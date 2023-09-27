@@ -7,7 +7,7 @@ type Props = {}
 const projectInfo = [
     {
         id: 4,
-        name: "CodeEspresso: Reatime Editor",
+        name: "CodeEspresso: Realtime Editor",
         description: [
            
             'Online IDE with real-time collaboration.',

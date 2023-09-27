@@ -47,7 +47,7 @@ function Particle() {
         interactivity: {
           events: {
             onClick: {
-              enable: false,
+              enable: isMobile? false : true,
               mode: "push",
             },
             onHover: {
@@ -61,7 +61,7 @@ function Particle() {
               quantity: isMobile ? 20 : 4, // Adjust the quantity for mobile
             },
             grab: {
-              distance: isMobile ? false : false, // Adjust the distance for mobile
+              distance: isMobile ? false : 100, // Adjust the distance for mobile
             },
           },
         },
