@@ -24,7 +24,7 @@ const projectInfo = [
         technologies: ['React.js', 'Socket.io', 'Node.js', 'SCSS']
     }, {
         id: 3,
-        name: "Ritik Protfolio",
+        name: "Ritik Portfolio",
         description: [
             'The portfolio page you are currently on is developed with a theme in mind but designed on the way as it progressed.',
             'Please feel free to connect over any suggestion, bug report or any doubt regarding the project'
@@ -55,7 +55,7 @@ const projectInfo = [
             "proj3-a.png",
             "proj3-b.png",
         ],
-        technologies: ['Python', 'OpneCV']
+        technologies: ['Python', 'OpenCV']
     },
     {
         id: 1,

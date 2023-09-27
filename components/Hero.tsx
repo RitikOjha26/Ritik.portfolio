@@ -3,10 +3,11 @@ import CornerButton from "./common/CornerButton";
 import Particle from '@/components/common/Particle';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import HeadingHighlight from './common/HeadingHighlights';
+import constants from '@/constants';
 
 type Props = {};
 
-export default function Hero({}: Props) {
+export default function Hero({ }: Props) {
   const selectText = useRef<HTMLInputElement | null>(null);
 
   // Set up typewriter effect
@@ -52,18 +53,18 @@ export default function Hero({}: Props) {
         </h1>
         <h3 className="typewriter label-1">
           {text}
-          {/* <Cursor cursorStyle="_" cursorColor="var(--blue-shade)" /> */}
         </h3>
-        
-      </div>
-      <div>
-        <a className='resume-button' target="_blank" rel="noopener noreferrer" href='/'>
-              <CornerButton>Get My Resume</CornerButton>
-            </a>
+        <a target="_blank" rel="noopener noreferrer" href={constants.RESUME_LINK}>
+          <CornerButton>Get My Resume</CornerButton>
+        </a>
+      
 
-        </div>
-       
-    </div>
+      </div>
+      
     
+    </div>
+
+
+
   );
 }

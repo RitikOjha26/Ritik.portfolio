@@ -67,12 +67,14 @@ $dur: .3s;
 //         transform: translateY(-50%);
 //     }
 // }
-.resume-button {
+
+  
+
+.corner-button {
     position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1.5rem 2rem; /* Adjust padding as needed */
+    top: 50%;
+    left: 45%;
+    margin-top: 3rem;
     opacity: 0.95;
     text-transform: uppercase;
     font-weight: 600;
@@ -80,61 +82,64 @@ $dur: .3s;
     cursor: pointer;
     background: transparent;
     border: $border-width solid $font-color-green;
+    // border-radius: $border-rad1;
+    padding: 1.5rem 2rem;
+    // font-size: 2.2rem;
     color: $font-color-green;
+    //position: relative;
     transition: color $dur;
     z-index: 1;
     box-shadow: inset 0px 0px 4px 1px $background-primary;
-  
+
+
     &:hover {
-      &::before {
-        width: 0;
-      }
-  
-      &::after {
-        height: 0;
-      }
+
+        // color: pink;
+        &::before {
+            width: 0;
+        }
+
+        &::after {
+            height: 0;
+        }
     }
-  
+
     &:active {
-      transform: scale(0.98);
-      box-shadow: inset 0px 0px 4px 2px $background-primary;
-      // text-shadow: 2px 2px darken($color: $font-color-green, $amount: 25%);
-      // border-width: $border-width / 2;
+        transform: scale(0.98);
+        box-shadow: inset 0px 0px 4px 2px $background-primary;
+        // text-shadow: 2px 2px darken($color: $font-color-green, $amount: 25%);
+        // border-width: $border-width / 2;
     }
-  
+
     &::before,
     &::after {
-      content: '';
-      position: absolute;
-      background: $background-primary;
-      z-index: -1;
-      transition: all $dur;
+        content: '';
+        position: absolute;
+        background: $background-primary;
+        z-index: -1;
+        transition: all $dur;
     }
-  
+
+    //the 101% is because of a pixel rounding issue in firefox
     &::before {
-      width: calc(102% - #{$corner-size});
-      height: calc(102% + #{$border-width * 2} + 1rem);
-      top: -$border-width - 0.1rem;
-      left: 50%;
-      transform: translateX(-50%);
+        width: calc(102% - #{$corner-size});
+        height: calc(102% + #{$border-width * 2} + 1rem);
+        top: -$border-width - 0.1rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
-  
+
     &::after {
-      height: calc(102% - #{$corner-size});
-      width: calc(102% + #{$border-width * 2});
-      left: -$border-width - 0.1rem;
-      top: 50%;
-      transform: translateY(-50%);
+        height: calc(102% - #{$corner-size});
+        width: calc(102% + #{$border-width * 2});
+        left: -$border-width - 0.1rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
-    @include respond(phone)
-    {    
-    top: 60%;
+    @include respond(phone) {
+      
+      left: 40%;
     }
-    @include respond(tab-land)
-    {    
-    top: 60%;
-    left: 55%;
-    
-    }
-  }
+
+}
   
