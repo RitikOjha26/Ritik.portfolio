@@ -3,7 +3,7 @@
 
     position: relative;
     overflow: hidden;
-    height: 90vh;
+    height: auto;
     width: 100vw;
     max-width: 100%;
     //margin-left: 23rem;
@@ -48,34 +48,7 @@
         flex-direction: column-reverse;
       }
   
-      &__image-wrapper {
-        position: relative;
-        //   max-width: 7rem;
-        height: 26rem;
-        min-width: 25.5rem;
-        width: 25.5rem;
-        background-color: $font-color-blue;
-        border: $border2 solid $font-color-blue;
-        border-radius: $border-rad2;
-        // opacity: 0.4;
-        //   height: auto;
-        margin: 1.5rem 0 0 5rem;
-  
-        img {
-          border-radius: $border-rad2;
-          object-fit: cover;
-        }
-  
-        @include respond(tab-port) {
-          border-radius: 90rem;
-          margin: 2rem auto;
-          margin-bottom: 4rem;
-  
-          img {
-            border-radius: 90rem;
-          }
-        }
-      }
+      
   
       // &__text {
       //   text-align: justify;

@@ -1,7 +1,9 @@
 .skills{
     //margin: 0 8rem;
     // padding: 7rem 5rem;
+    position: relative;
     min-height: 100vh;
+    overflow: hidden;
     
     &__heading {
         display: flex;

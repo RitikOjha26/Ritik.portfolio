@@ -50,7 +50,7 @@ export default function Hero({ }: Props) {
         <h3 className="typewriter label-1">
           {text}
         </h3>
-        <div>
+        <div >
           <a target="_blank" rel="noopener noreferrer" href={constants.RESUME_LINK}>
             <CornerButton>Get My Resume</CornerButton>
           </a>
