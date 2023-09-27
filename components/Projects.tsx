@@ -30,7 +30,7 @@ const projectInfo = [
             'Please feel free to connect over any suggestion, bug report or any doubt regarding the project'
 
         ],
-        github: "https://github.com/RitikOjha26/Ritik.portfolio",
+        github: "https://ritik-pf.vercel.app/",
         url: "https://github.com/RitikOjha26/Ritik.portfolio",
         image: [
             "proj2-c.png",
