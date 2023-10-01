@@ -3,7 +3,7 @@ import React from "react";
 // import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
-import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaInstagramSquare,FaTwitter, FaTwitterSquare } from "react-icons/fa";
 type Props = {};
 
 function SocialIcons({}: Props) {
@@ -25,6 +25,12 @@ function SocialIcons({}: Props) {
       label: "Instagram",
       icon: <FaInstagramSquare />,
       link: "https://www.instagram.com/ojha.ritik26",
+    },
+    {
+      id: 4,
+      label: "Twitter",
+      icon: <FaTwitterSquare />,
+      link: "https://twitter.com/RitikOz",
     },
   ];
 
