@@ -36,3 +36,34 @@ ORDER: Base + typography > general layout + grid > page layout > components
         @media only screen and (min-width: 112.5em) { @content };    //1800p
     }
 }
+
+@mixin glow-borde($radius: 12px, $padding: 20px) {
+  border-radius: $radius;
+  padding: $padding;
+  background: #0d0d0d; 
+  color: white;
+  position: relative;
+  
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(
+      135deg,
+      #66b933,
+      #8de85c,
+      #66b933
+    );
+    background-size: 400% 400%;
+    border-radius: inherit;
+    filter: blur(10px);
+    opacity: 0.7;
+    animation: glowBorder 5s ease infinite;
+  }
+}

@@ -31,19 +31,22 @@ const skills: any = [
         name: "TypeScript", id: 8
     },
     {
-        name: "Git", id: 9
+        name: "Playwright", id: 9
     },
     {
-        name: "Sass", id: 10
+        name: "Git", id: 10
     },
     {
-        name: "TailWind", id: 11
+        name: "Sass", id: 11
     },
     {
-        name: "HTML", id: 12
+        name: "TailWind", id: 12
     },
     {
-        name: "CSS", id: 13
+        name: "HTML", id: 13
+    },
+    {
+        name: "CSS", id: 14
     },
 ]
 

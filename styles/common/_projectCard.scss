@@ -56,14 +56,13 @@
 
             &:after {
                 box-shadow: 0 0 0 $border1 $font-color-green;
-                // left: calc(($spacing + $line + ($dot * 0.35)) * -1);
                 left: calc(($line + ($dot * 0.35)) * -1);
-                background: $background-primary; //lighten($background-primary, 5%);
+                background: $background-primary;
                 border-radius: 50px;
                 height: $dot;
                 width: $dot;
                 content: "";
-                // top: 5px ;
+                
             }
         }
     }
@@ -76,7 +75,6 @@
         position: relative;
         flex-wrap: wrap;
         top: -1.075rem;
-        // margin-left: $spacing;
 
         .tech {
             margin-right: 0.5rem;

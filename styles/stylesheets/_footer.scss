@@ -39,8 +39,10 @@
             padding: 1.5rem;
         }
         @include respond(phone) {
+            justify-content: center;
             padding: 1rem;
             padding-left: 4rem;
+            max-width: 90vw;
         }
 
     }

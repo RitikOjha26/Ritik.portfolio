@@ -1,6 +1,4 @@
 .projects {
-    //margin: 0 8rem;
-    // padding: 7rem 5rem;
     min-height: 100vh;
 
     /* Variables */
@@ -8,13 +6,13 @@
     $color-light: white;
     $color-dim: #6c6d6d;
     $spacing: 5rem;
-    $radius: $border-rad2; //0.25rem;
+    $radius: $border-rad2; 
     $cardPadding : 5rem;
     $date: 12rem;
     $dot: 1rem;
     $line: 0.25rem;
 
-    /* projects-wrapper */
+   
     .projects-wrapper {
         color: rgba(white, 80%);
         margin: $spacing auto;
@@ -42,7 +40,7 @@
                 position: absolute;
                 display: block;
                 top: 0;
-                // opacity: 0.9;
+               
             }
 
             &:nth-of-type(odd) {
@@ -73,13 +71,12 @@
                 }
 
                 &::after {
-                    // content: "";
+                    
                     right: 0;
                     border: $line solid$font-color-green;
                     border-left: none;
                     border-top-right-radius: $border-rad2;
                     border-bottom-right-radius: $border-rad2;
-                    // background-color: green;
                     width: 55%;
                     height: calc(100% + $line);
                 }

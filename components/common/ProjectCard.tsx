@@ -37,7 +37,7 @@ function ProjectCard({ project }: Props) {
                 </div>
             </div>
             <div className="composition">
-
+                
                 <img
                     alt="A"
                     className="composition__photo composition__photo--p1"

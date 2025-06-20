@@ -12,6 +12,10 @@ function LeftMenu({ }: Props) {
       link: "#skills",
     },
     {
+      label: "Experience",
+      link: "#experience",
+    },
+    {
       label: "Projects",
       link: "#projects",
     },
@@ -21,15 +25,11 @@ function LeftMenu({ }: Props) {
       {items.map((item) => {
         return (
           <a href={item.link} className="left-navigation__item" key={item.label}>
-            {/* <a href={item.link}> */}
               <div className="bar"></div>
-              {/* <Link> */}
               <span className="link-item label-2">
                 {item.label}
               </span>
-              {/* </Link> */}
             </a>
-          // </div>
         );
       })}
     </div>
