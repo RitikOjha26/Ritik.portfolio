@@ -11,27 +11,26 @@ import Footer from '@/components/Footer';
 import SocialIcons from '@/components/socialicons';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
+import Experience from '@/components/Experience';
 
 // Define the font subset (Latin characters) for Inter
 const inter = Inter({ subsets: ['latin'] });
 
 type Props = {};
 
-export default function Home({}: Props) {
+export default function Home({ }: Props) {
   return (
     <div className=''>
       <Head>
-
         <title>Ritik Portfolio</title>
-
       </Head>
-      
+
       <section id='home'>               {/* Home Section */}
-                                        
+
         <Header />                      {/* Top Navbar   */}
-        
+
         <LeftMenu />                    {/* Left Navbar  */}
-        
+
         <SocialIcons />                 {/* BLeft Navbar */}
 
       </section>
@@ -43,11 +42,13 @@ export default function Home({}: Props) {
       </section>
 
       <About />                          {/* About Me */}
-      
-      <Skills />                        {/* Skills   */}
-      
+
+      <Skills />                         {/* Skills   */}
+
+      <Experience />                     {/* Experience   */}
+
       <Projects />                       {/* Projects */}
-      
+
       <Contact />                        {/* Contact Me */}
 
       <Footer />
