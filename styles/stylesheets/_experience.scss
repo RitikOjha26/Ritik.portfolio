@@ -1,0 +1,143 @@
+.experience {
+    position: relative;
+    overflow: hidden;
+    height: 120vh;
+
+    &__wrapper {
+        border-radius: $border-rad2;
+        position: relative;
+
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+
+        display: flex;
+        position: relative;
+        color: $font-color-grey;
+        padding-top: 3rem;
+        width: 100%;
+
+        @include respond(tab-port) {
+            flex-direction: column-reverse;
+        }
+
+
+
+        strong {
+
+            font-weight: inherit;
+            color: lighten($color: $font-color-grey, $amount: 30);
+        }
+    }
+
+    @include respond(phone)
+    {
+        height: 140vh;
+    }
+
+
+}
+
+.exp-container {
+    @include glow-borde(16px, 0.25rem);
+    z-index: 10;
+
+    @include respond(phone)
+    {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+}
+
+.exp-modal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    border-radius: 16px;
+
+    &__heading {
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+        align-items: center;
+        border-bottom: 2px solid #66b933;
+    }
+
+    &__image {
+        height: 80%;
+        
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+
+    &__description {
+        display: flex;
+        text-align: left;
+        padding-top: 1rem;
+    }
+}
+
+.points {
+    $spacing: 2rem;
+    $date: 12rem;
+    $dot: 0.8rem;
+    $line: 0.25rem;
+    $shift: 10px;
+    margin: $spacing 0 0 $spacing;
+
+    .point {
+        border-left: $line solid $font-color-green;
+        position: relative;
+        list-style: none;
+        text-align: left;
+        padding-left: $spacing;
+        color: $font-color-grey;
+
+        &__content {
+            position: relative;
+            top: -0.9rem;
+            padding-bottom: 1rem;
+        }
+
+        &:nth-last-child(2) {
+            padding-bottom: 1.18rem;
+        }
+
+        &:last-of-type {
+            border-left: $line solid $background-primary;
+        }
+
+        &:before,
+        &:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+
+        &:after {
+            box-shadow: 0 0 0 $border1 $font-color-green;
+            left: calc(($line + ($dot * 0.35)) * -1);
+            background: $background-primary;
+            border-radius: 50px;
+            height: $dot;
+            width: $dot;
+            content: "";
+        }
+    }
+}
