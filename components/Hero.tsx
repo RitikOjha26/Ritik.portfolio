@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import React, { useRef, useEffect } from 'react';
 import CornerButton from "./common/CornerButton";
 import Particle from '@/components/common/Particle';
@@ -36,6 +37,7 @@ export default function Hero({ }: Props) {
     <div className="hero-section ">
       <Particle />
       <div className="hero-section__text-wrapper ">
+        {/* <label className='sr-only'>Intro Text</label> */}
         <input
           readOnly
           ref={selectText}

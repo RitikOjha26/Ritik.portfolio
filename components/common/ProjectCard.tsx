@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 import { BiLinkExternal } from "react-icons/bi";
 import { VscGithubAlt, VscGithub } from "react-icons/vsc";
 
-type Props = { project: { id: Number, name: string, description: string[], github: string, url: string, image: string[], technologies: string[] } }
+type Props = { project: { id: number; name: string; description: string[]; github: string; url: string; image: string[]; technologies: string[] } }
 
 function ProjectCard({ project }: Props) {
     return (
@@ -37,24 +37,18 @@ function ProjectCard({ project }: Props) {
                 </div>
             </div>
             <div className="composition">
-                
-                <img
-                    alt="A"
-                    className="composition__photo composition__photo--p1"
-                    src={`/images/projects/${project.image[0]}`}
-                />
-
-                <img
-                    alt="B"
-                    className="composition__photo composition__photo--p2"
-                    src={`/images/projects/${project.image[1]}`}
-                />
-
-                <img
-                    alt="C"
-                    className="composition__photo composition__photo--p3"
-                    src={`/images/projects/${project.image[2]}`}
-                />
+                {project.image.map((imgSrc, i) => (
+                    <Image
+                        key={i}
+                        src={`/images/projects/${imgSrc}`}
+                        alt={`Project ${project.name} Image ${i + 1}`}
+                        className={`composition__photo composition__photo--p${i + 1}`}
+                        width={500}    
+                        height={350}   
+                        style={{ objectFit: 'cover' }}
+                        priority={i === 0} 
+                    />
+                ))}
             </div>
         </>
     )

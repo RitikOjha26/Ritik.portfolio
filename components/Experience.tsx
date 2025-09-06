@@ -6,37 +6,37 @@ import quaprix from "../public/images/experience/quaprix.png"
 import RIS from "../public/images/experience/RIS.png"
 
 const slideData = [
-    {
-      title: "Tiki Global",
-      description:[
-        "Enhanced performance with dynamic imports, hooks & Web Workers, boosting table load speed by 40%.",
-        "Automated UI/API tests with Playwright, reaching 85% coverage and reducing bugs by 30%.",
-        "Collaborated with design team to ship new features and enhance overall UX.",
-        "Sept 2022 - Nov 2022"
-      ],
-      image: kiaasa,
-    },
+    // {
+    //   title: "Tiki Global",
+    //   description:[
+    //     "Refactored portfolio site using React, Tailwind, SCSS; improved page load time by 35%.",
+    //     "Collaborated on UI and SEO revamp, increasing organic traffic by over 20%.",
+    //     "Modularized SCSS and JS with mixins; reduced codebase size by 20%, boosting team efficiency.",
+    //     "Sept 2022 - Nov 2022"
+    //   ],
+    //   image: kiaasa,
+    // },
     {
       title: "Quaprix",
       description:[
-        "Enhanced performance with dynamic imports, code splitting, hooks, and Web Workers, boosting table load speed by 42%.",
-        "Automated UI/API tests with Playwright, reaching 85% coverage and reducing bugs by 30%.",
-        "Collaborated with design team to ship new features and enhance overall UX.",
+        "Built a CMS-first property platform with Next.js + TypeScript, integrating Prismic CMS for type-safe content and slice-based architecture",
+        "Improved performance and SEO with optimized rendering, dynamic imports, and client-side APIs.",
+        "Strengthened reliability by adopting TDD with Vitest, Playwright automation, and streamlined CI/CD workflows.",
         "June 2024 - Current"
       ],
       image: quaprix,
     },
-    {
-      title: "Rugs In Style",
-      description:[
-        "Enhanced performance with dynamic imports, code splitting, hooks, and Web Workers, boosting table load speed by 40%.",
-        "Automated UI/API tests with Playwright, reaching 85% coverage and reducing bugs by 30%.",
-        "Collaborated with design team to ship new features and enhance overall UX.",
-        "Jan 2024 - Apr 2024"
-      ],
-      image:RIS,
+    // {
+    //   title: "Rugs In Style",
+    //   description:[
+    //     "Refactored and optimized the portfolio website using React.js, Tailwind, and SCSS for better speed and responsiveness.",
+    //     "Enhanced SEO and user engagement by restructuring content and collaborating with design.",
+    //     "Simplified the frontend codebase with reusable SCSS mixins and modular JavaScript for easier collaboration.",
+    //     "Jan 2024 - Apr 2024"
+    //   ],
+    //   image:RIS,
       
-    },
+    // },
   ];
 
 const Experience = () => {

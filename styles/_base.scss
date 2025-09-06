@@ -1,16 +1,11 @@
 @import 'mixin';
 
 body {
-  //max-width: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box !important;
-  overflow: none;
+  overflow-x: hidden;
 
-  @include respond(phone)
-  {
-    max-width: 94vw;
-  }
 }
 
 *,
@@ -22,7 +17,6 @@ body {
 }
 
 html {
-  // cursor:none;
   scroll-behavior: smooth;
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5% (default browser font size is 16px)
@@ -44,7 +38,7 @@ html {
 
 ::selection {
   background-color: $font-color-green;
-  color: $background-primary; //$font-color-off-white;//
+  color: $background-primary;
 }
 
 /* Scrollbar */
@@ -65,22 +59,18 @@ html {
 
 *::-webkit-scrollbar-thumb {
   background-color: $font-color-green;
-  // border-radius: $border-rad1;
-  // border: 3px none #ffffff;
 }
 
 .container {
   margin: 0 4rem;
   padding: 7rem 5rem;
-  // transition: margin $timer2 ease-in-out;
 
   @include respond(tab-port) {
     margin: 0 4rem;
   }
 
   @include respond(phone) {
-    max-width: 100vw;
-    margin: 0 0.5rem;
+    margin: 0 0rem;
     padding: 7rem 3rem 7rem 4rem;
   }
 

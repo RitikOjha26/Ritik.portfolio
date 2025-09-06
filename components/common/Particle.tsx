@@ -1,8 +1,9 @@
+import dynamic from 'next/dynamic';
 import React, { useCallback, useEffect, useState } from "react";
 import { Container, Engine } from "tsparticles-engine";
-import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 
+const Particles = dynamic(() => import('react-particles'), { ssr: false });
 function Particle() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -29,7 +30,7 @@ function Particle() {
   }, []);
 
   const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    console.log(container);
+    
   }, []);
 
   return (
