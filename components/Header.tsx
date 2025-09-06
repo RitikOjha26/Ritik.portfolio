@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from './common/Logo';
-import { motion } from 'framer-motion';
 
 type Props = {};
 

@@ -4,9 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-  // CarouselNext,
-  // CarouselPrevious,
+  CarouselItem
 } from "@/components/ui/carousel"
 
 interface ExpData {
@@ -39,7 +37,7 @@ export function ExpCarousel({ data }: ExpCarouselProps) {
                           />
                         </div>
                         <div className="exp-modal__title">
-                          <h2 className="label-1 font-extralight">{item.title}</h2>
+                          {/* <h2 className="label-1 font-extralight">{item.title}</h2> */}
                         </div>
                       </div>
                       <div className="exp-modal__description">

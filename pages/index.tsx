@@ -1,20 +1,19 @@
 import Head from 'next/head';
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Skills from '@/components/Skills';
-import Projects from '@/components/Projects';
-import Contact from '@/components/Contact';
-import LeftMenu from '@/components/LeftMenu';
-import Footer from '@/components/Footer';
+import dynamic from "next/dynamic";
 
-import SocialIcons from '@/components/socialicons';
-import { Inter } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
-import Experience from '@/components/Experience';
+// Critical components (keep these directly imported)
+import Header from "@/components/Header";
+import LeftMenu from "@/components/LeftMenu";
+import SocialIcons from "@/components/socialicons";
+import Footer from "@/components/Footer";
 
-// Define the font subset (Latin characters) for Inter
-const inter = Inter({ subsets: ['latin'] });
+
+const Hero = dynamic(() => import("@/components/Hero"));
+const About = dynamic(() => import("@/components/About"));
+const Skills = dynamic(() => import("@/components/Skills"));
+const Projects = dynamic(() => import("@/components/Projects"));
+const Contact = dynamic(() => import("@/components/Contact"));
+
 
 type Props = {};
 
@@ -45,7 +44,7 @@ export default function Home({ }: Props) {
 
       <Skills />                         {/* Skills   */}
 
-      <Experience />                     {/* Experience   */}
+      {/* <Experience />                     Experience   */}
 
       <Projects />                       {/* Projects */}
 
