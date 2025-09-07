@@ -9,7 +9,7 @@ const projectInfo = [
         id: 4,
         name: "CodeEspresso: AI-Driven Collaborative Code Editor:",
         description: [
-           
+
             'Developed Code Espresso, an online code editor supporting real-time collaboration for 10+ simultaneous users using React.js, Socket.io, and Node.js, enabling seamless shared code editing across sessions.',
             'Integrated Firebase Authentication and Firestore to handle secure user login, session persistence, and personalized user profiles via Firebase Studio.',
             'Embedded Google’s Gemini API for AI-assisted coding support, optimizing prompt engineering to reduce token usage by 30%, enhancing both cost-efficiency and response quality.'
@@ -21,7 +21,7 @@ const projectInfo = [
             "proj1-b.png",
             "proj1-c.png",
         ],
-        technologies: ['React.js', 'Socket.io', 'Node.js', 'FireBase' , 'Google Gemini API' , 'SCSS']
+        technologies: ['React.js', 'Socket.io', 'Node.js', 'FireBase', 'Google Gemini API', 'SCSS']
     }, {
         id: 3,
         name: "Ritik Portfolio",
@@ -37,7 +37,7 @@ const projectInfo = [
             "proj2-b.png",
             "proj2-a.png",
         ],
-        technologies: ['Next.js', 'TypeScript', 'SCSS', 'Framer Motion','Tailwind']
+        technologies: ['Next.js', 'TypeScript', 'SCSS', 'Framer Motion', 'Tailwind']
     },
 
     {
@@ -55,16 +55,15 @@ const projectInfo = [
             "proj3-a.png",
             "proj3-b.png",
         ],
-        technologies: ['React', 'Typescript' , 'Material-UI' , 'Vite' , 'React Context API']
+        technologies: ['React', 'Typescript', 'Material-UI', 'Vite', 'React Context API']
     },
     {
         id: 1,
         name: "Quaprix: Website Revamp & Upgrade ",
         description: [
             'Migrated the online platform from React to TypeScript, reducing bugs by 20% and improving code maintainability.',
-            "Optimized content rendering by integrating API’s, reducing page load time from 9.5s to 1.05s.",
+            "Optimized content rendering by integrating API’s, reducing page load time from 5.2s to 2.7s.",
             "Contributed to team discussions and participated in implementing SEO improvements, resulting in a 25% increase in organic traffic."
-
         ],
         github: "https://www.linkedin.com/in/ritik-ojha/",
         url: "https://www.linkedin.com/in/ritik-ojha/",
@@ -73,13 +72,13 @@ const projectInfo = [
             "proj4-a.png",
             "proj4-b.png",
         ],
-        technologies: ['React', ' JavaScript','SCSS' , 'Typescript']
+        technologies: ['React', ' JavaScript', 'SCSS', 'Typescript']
     },
 ]
 
 function Projects({ }: Props) {
     return (
-        <div  id='projects' className='projects container'>
+        <div id='projects' className='projects container'>
             <h1 className='about__heading headline-1'>Fun&nbsp;<HeadingHighlight>Projects</HeadingHighlight></h1>
             <ul className="projects-wrapper bg-dblue ">
                 {
